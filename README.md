@@ -12,10 +12,10 @@ No real services, no real incidents. The point is the MCP plumbing, not the data
 
 ## Why remote (HTTP) instead of stdio?
 
-Most MCP tutorials show the **stdio transport**: your MCP client (an IDE, an
-agent framework, Claude Desktop, whatever) spawns your server as a local
-child process and talks to it over stdin/stdout. That's simple and it's the
-right choice when:
+Most MCP tutorials show the **stdio transport**: your MCP client (an IDE
+plugin, a desktop AI assistant app, an agent framework) spawns your server
+as a local child process and talks to it over stdin/stdout. That's simple
+and it's the right choice when:
 
 - the server only ever needs to run on the same machine as the client,
 - you're fine with the client managing the server's lifecycle (start/stop/crash-restart),
